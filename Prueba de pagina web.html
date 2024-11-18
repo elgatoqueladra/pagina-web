@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeZone - Tu tienda de bicicletas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #008C76;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #006F59;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #004B42;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1600x600?text=Bicicletas') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .bikes-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .bike-card {
+            background-color: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .bike-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .bike-card h3 {
+            padding: 10px;
+            background-color: #008C76;
+            color: white;
+            margin: 0;
+        }
+        .bike-card p {
+            padding: 10px;
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            background-color: #008C76;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>BikeZone</h1>
+        <p>Las mejores bicicletas para todos los gustos</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#bikes">Nuestras Bicicletas</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>¡Explora nuestras bicicletas!</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2 id="bikes">Bicicletas Populares</h2>
+        <div class="bikes-list">
+            <!-- Bike 1 -->
+            <div class="bike-card">
+                <img src="https://via.placeholder.com/250x200?text=Bicicleta+De+Montaña" alt="Bicicleta de Montaña">
+                <h3>Bicicleta de Montaña</h3>
+                <p>Perfecta para aventuras en terrenos difíciles. Con suspensión y resistencia.</p>
+            </div>
+            <!-- Bike 2 -->
+            <div class="bike-card">
+                <img src="https://via.placeholder.com/250x200?text=Bicicleta+De+Carretera" alt="Bicicleta de Carretera">
+                <h3>Bicicleta de Carretera</h3>
+                <p>Ligera, rápida y aerodinámica, ideal para recorridos largos en asfalto.</p>
+            </div>
+            <!-- Bike 3 -->
+            <div class="bike-card">
+                <img src="https://via.placeholder.com/250x200?text=Bicicleta+De+Ciudad" alt="Bicicleta de Ciudad">
+                <h3>Bicicleta de Ciudad</h3>
+                <p>Cómoda y funcional para desplazarse por la ciudad. ¡Viaja con estilo!</p>
+            </div>
+            <!-- Bike 4 -->
+            <div class="bike-card">
+                <img src="https://via.placeholder.com/250x200?text=Bicicleta+Híbrida" alt="Bicicleta Híbrida">
+                <h3>Bicicleta Híbrida</h3>
+                <p>Combina lo mejor de las bicicletas de montaña y carretera. ¡Versatilidad total!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BikeZone. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
